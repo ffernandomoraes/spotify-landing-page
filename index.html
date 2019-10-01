@@ -2,10 +2,38 @@
 <html lang='pt-br' dir='ltr'>
 
 <head>
+   <!-- codificação -->
    <meta charset='UTF-8'>
+
+   <!-- viewport -->
    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+
+   <!-- titulo da página -->
    <title>Música para todos - Spotify</title>
+
+   <!-- compartilhamento nos buscadores -->
+   <meta name='description' content='O Spotify é um serviço de música digital que dá acesso a milhões de músicas.'>
+   <meta name='keywords'
+      content='Spotify, música, online, ouvir, transmissão, tocar, digital, álbum, artista, playlist'>
+
+   <!-- compartilhamento em redes sociais -->
+   <meta property='og:title' content='Música para todos.'>
+   <meta property='og:type' content='website'>
+   <meta property='og:url' content='https://www.spotify.com/br'>
+   <meta property='og:image' content='http://www.scdn.co/i/_global/open-graph-default.png'>
+   <meta property='og:image:secure_url' content='https://www.scdn.co/i/_global/open-graph-default.png'>
+   <meta property='og:description' content='O Spotify tem músicas para sua vida inteira.'>
+
+   <!-- compartilhamento no twitter -->
+   <meta name='twitter:card' content='summary'>
+   <meta name='twitter:title' content='Música para todos.'>
+   <meta name='twitter:image' content='http://www.scdn.co/i/_global/twitter_card-default.jpg'>
+   <meta name='twitter:description' content='O Spotify tem músicas para sua vida inteira.'>
+
+   <!-- favicon -->
    <link rel='shortcut icon' href='./assets/images/icons/favicon.png' />
+
+   <!-- css -->
    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
    <link rel='stylesheet' href='./assets/styles/reset.css'>
@@ -23,10 +51,16 @@
             <div class='col-8 col-sm-8 col-md-8 header__nav'>
                <nav>
                   <ul>
-                     <li><a href='' title='Seja Premium Spotify'>Premium</a></li>
-                     <li><a href='' title='Ajuda Spotify'>Ajuda</a></li>
-                     <li><a href='' title='Download Spotify'>Baixar</a></li>
-                     <li class='--divider'></li>
+                     <li class='d-none d-sm-none d-md-none d-lg-block'>
+                        <a href='' title='Seja Premium Spotify'>Premium</a>
+                     </li>
+                     <li class='d-none d-sm-none d-md-none d-lg-block'>
+                        <a href='' title='Central de ajuda do Spotify'>Ajuda</a>
+                     </li>
+                     <li class='d-none d-sm-block'>
+                        <a href='' title='Download Spotify'>Baixar</a>
+                     </li>
+                     <li class='d-none d-sm-block --divider'></li>
                      <li class='--avatar'>
                         <div class='dropdown'>
                            <span class='dropdown-toggle' data-toggle='dropdown'>
@@ -34,7 +68,7 @@
                            </span>
 
                            <div class='dropdown-menu dropdown-menu-right'>
-                              <a class='dropdown-item' href='#' title='Conta Spotify'>Conta</a>
+                              <a class='dropdown-item' href='#' title='Minha Conta Spotify'>Conta</a>
                               <a class='dropdown-item --gray' href='#' title='Sair'>Sair</a>
                            </div>
                         </div>
@@ -53,7 +87,7 @@
                <div class='col-12'>
                   <h1>Seja livre. Seja Premium.</h1>
                   <h2>Experimente o Premium grátis por 3 meses. Depois, custa só R$ 16,90/mês.</h2>
-                  <a href='#' class='btn btn-default'>Iniciar o teste grátis</a>
+                  <a href='#' class='btn btn-default' title='Iniciar o teste premium Spotify'>Iniciar o teste grátis</a>
                </div>
             </div>
          </div>
@@ -70,68 +104,68 @@
             </div>
 
             <div class='row albums__items'>
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/1.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Playlist trap/rap Americano</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Playlist trap/rap Americano</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
 
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/2.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Old Town Road - Remix</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Old Town Road - Remix</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
 
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/3.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Nome do Álbum</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Nome do Álbum</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
 
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/4.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Nome do Álbum</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Nome do Álbum</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
 
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/5.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Nome do Álbum</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Nome do Álbum</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
 
-               <figure class='col-12 col-sm-6 col-md-4 albums__item'>
+               <figure class='col-12 col-sm-6 col-md-6 col-lg-4 albums__item'>
                   <a href='#' title='Nome do Álbum'>
                      <img src='./assets/images/albums/6.jpg' alt='Album Example'>
 
-                     <figcaption class='album__caption'>
-                        <div class='title'>Nome do Álbum</div>
-                        <div class='cta'>Escute agora</div>
+                     <figcaption class='item__caption'>
+                        <div class='caption__title'>Nome do Álbum</div>
+                        <div class='caption__cta'>Escute agora</div>
                      </figcaption>
                   </a>
                </figure>
@@ -143,42 +177,42 @@
    <footer>
       <div class='container'>
          <div class='row'>
-            <div class='col-12 col-sm-12 col-md-8'>
+            <div class='col-12 col-sm-12 col-md-12 col-lg-8'>
                <div class='row'>
-                  <div class='col-12 col-sm-4 col-md-3 col-lg-3 footer__links'>
+                  <div class='col-12 col-sm-4 col-md-4 col-lg-3 footer__links'>
                      <div class='links__title'>Empresa</div>
 
                      <ul>
                         <li>
-                           <a href='#'>Sobre</a>
+                           <a href='#' title='Sobre o Spotify'>Sobre</a>
                         </li>
                         <li>
-                           <a href='#'>Empregos</a>
+                           <a href='#' title='Encontre empregos no Spotify'>Empregos</a>
                         </li>
                         <li>
-                           <a href='#'>For the Record</a>
+                           <a href='#' title='For the Record'>For the Record</a>
                         </li>
                      </ul>
                   </div>
 
-                  <div class='col-12 col-sm-4 col-md-3 col-lg-3 footer__links'>
+                  <div class='col-12 col-sm-4 col-md-4 col-lg-3 footer__links'>
                      <div class='links__title'>Comunidades</div>
 
                      <ul>
                         <li>
-                           <a href='#'>Para Artistas</a>
+                           <a href='#' title='Para artistas Spotify'>Para Artistas</a>
                         </li>
                         <li>
-                           <a href='#'>Desenvolvedores</a>
+                           <a href='#' title='Desenvolvedores Spotify'>Desenvolvedores</a>
                         </li>
                         <li>
-                           <a href='#'>Marcas</a>
+                           <a href='#' title='Para marcas Spotify'>Marcas</a>
                         </li>
                         <li>
-                           <a href='#'>Investidores</a>
+                           <a href='#' title='Investidores Spotify'>Investidores</a>
                         </li>
                         <li>
-                           <a href='#'>Fornecedores</a>
+                           <a href='#' title='Fornecedores Spotify'>Fornecedores</a>
                         </li>
                      </ul>
                   </div>
@@ -188,31 +222,31 @@
 
                      <ul>
                         <li>
-                           <a href='#'>Ajuda</a>
+                           <a href='#' title='Central de ajuda Spotify'>Ajuda</a>
                         </li>
                         <li>
-                           <a href='#'>Player da Web</a>
+                           <a href='#' title='Ir para o player web Spotify'>Player da Web</a>
                         </li>
                         <li>
-                           <a href='#'>Aplicativo móvel grátis</a>
+                           <a href='#' title='App do Spotify'>Aplicativo móvel grátis</a>
                         </li>
                      </ul>
                   </div>
                </div>
             </div>
 
-            <div class='col-12 col-sm-12 col-md-4'>
+            <div class='col-12 col-sm-12 col-md-12 col-lg-3'>
                <div class='row'>
                   <div class='col-12 footer__social'>
                      <a href='#' title='Instagram Spotify'>
                         <i class='fa fa-instagram' aria-hidden='true'></i>
                      </a>
 
-                     <a href='#' title='Instagram Spotify'>
+                     <a href='#' title='Twitter Spotify'>
                         <i class='fa fa-twitter' aria-hidden='true'></i>
                      </a>
 
-                     <a href='#' title='Instagram Spotify'>
+                     <a href='#' title='Facebook Spotify'>
                         <i class='fa fa-facebook' aria-hidden='true'></i>
                      </a>
                   </div>
